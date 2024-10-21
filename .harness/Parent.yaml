@@ -1,0 +1,26 @@
+pipeline:
+  name: Parent
+  identifier: Parent
+  projectIdentifier: Test_1
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: AA
+        identifier: AA
+        description: ""
+        type: Pipeline
+        spec:
+          org: default
+          pipeline: p0
+          project: Test_1
+    - stage:
+        name: BB
+        identifier: BB
+        description: ""
+        type: Pipeline
+        spec:
+          org: default
+          pipeline: p1
+          project: Test_1
+          inputs: {}
